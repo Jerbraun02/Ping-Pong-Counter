@@ -31,7 +31,17 @@
                             <p class="subtitle">
                                 Use the buttons below to keep score
                             </p>
-                            <label for="playto" class="label is-large is-inline">Playing to</label>
+                            <label for="roundsCount" class="label is-large is-inline">Amount of rounds</label>
+                            <div class="select is-rounded">
+                                <select name="" id="roundsCount">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <label for="playto" class="label is-large is-inline">Points per round</label>
                             <div class="select is-rounded">
                                 <select name="" id="playto">
                                     <option value="3">3</option>
@@ -50,6 +60,7 @@
                             <button id="p1Button" class="is-primary button card-footer-item is-large">+1 Player One</button>
                             <button id="p2Button" class="is-info button card-footer-item is-large">+1 Player Two</button>
                             <button id="reset" class="is-danger button card-footer-item is-large">Reset</button>
+                            <button id="nextRound" class="is-dark button card-footer-item is-large">Next Round</button>
                         </footer>
                     </div>
                 </div>
