@@ -36,6 +36,7 @@ player1button.addEventListener('click', () => {
             if(p1RoundsWon === roundsCountNeeded){
                 isGameOver = true;
                 nextRoundButton.disabled = true;
+                alert('Player 1 has won the game!');
             }
         }
     }
@@ -60,6 +61,7 @@ player2button.addEventListener('click', () => {
             if(p2RoundsWon === roundsCountNeeded){
                 isGameOver = true;
                 nextRoundButton.disabled = true;
+                alert('Player 2 has won the game!');
             }
         }
     }
