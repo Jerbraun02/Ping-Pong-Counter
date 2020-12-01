@@ -35,6 +35,7 @@ player1button.addEventListener('click', () => {
             }
             if(p1RoundsWon === roundsCountNeeded){
                 isGameOver = true;
+                nextRoundButton.disabled = true;
             }
         }
     }
@@ -58,16 +59,11 @@ player2button.addEventListener('click', () => {
             }
             if(p2RoundsWon === roundsCountNeeded){
                 isGameOver = true;
+                nextRoundButton.disabled = true;
             }
         }
     }
 });
-
-if(isGameOver === true){
-    player1button.disabled = true;
-    player2button.disabled = true;
-    nextRoundButton.disabled = true;
-}
 
 resetButton.addEventListener('click', reset);
 
